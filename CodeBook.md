@@ -1,4 +1,5 @@
-VARIABLES ORIGINAL DATA_SET:
+VARIABLES ORIGINAL DATA_SETS:
+===========================
 
 1 tBodyAcc-mean()-X
 2 tBodyAcc-mean()-Y
@@ -683,6 +684,7 @@ This dataset is distributed AS-IS and no responsibility implied or explicit can 
 Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.”
 
 TRANSFORMATIONS TO CLEAN UP THE DATA
+======================================
 The training and test datasets are merged to form a single dataset to obtain at the end a dataset containing the average of each variable grouped by subject and activity. To obtain this the following has been done:
 - merge datasets by rows 
 - merge by column activity and subject data sets
@@ -694,8 +696,10 @@ The training and test datasets are merged to form a single dataset to obtain at 
 - restore original labels including the two additional “subject” and “activity”
 
 DIMENSION OF THE tidy data
+==========================
 The tidy data.txt file is a data frame of size is 180 rows and 563 columns
 Each row represent 6*30 subject-activity combinations, and each row shows the mean of the 561 different variables described above. The first two columns are obviously the subject and activity object for a total of 563 columns
 
 TIDY DATA VARIABLES
+=====================
 The tidydata.txt file variables are exactly the same as the original datasets described above this document, and including the grouped “Subject” and “Activity” columns. The variables represent the mean() of the grouped subject and activity sets of data 
