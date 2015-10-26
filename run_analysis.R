@@ -27,7 +27,7 @@ my_data <- rbind(tst_data,trn_data)
 #in this way the column names is unique and the original description is maintained)
 f_lab1 <- make.names(tfeat[,2])
 f_lab2 <- make.names(tfeat[,1])
-f_lab=paste(f_lab2,f_lab)
+f_lab=paste(f_lab2,f_lab1)
 c_labels <-c("Subject","Activity",f_lab)
 colnames(my_data) <- c_labels
 
